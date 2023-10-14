@@ -150,3 +150,7 @@ section:not(#slide){padding:80px 0;}
   .pro_box ul{display:flex;}
   .pro_box li{width:50%;}
   .pro_box li img{width:100%;}
+
+@media screen and (max-width:1090px){
+.center{margin:0 auto; width:760px;}
+}

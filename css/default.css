@@ -15,7 +15,7 @@
 *{margin: 0; padding: 0;}
 a, a:visited, a:hover{text-decoration: none; display: block;}
 ul{list-style: none;}
-body{
+body{ min-width:760px;
   font-family: 'Orbit-Regular', 'Noto Sans KR';
   -webkit-user-select: none;
 	-moz-user-select: none;

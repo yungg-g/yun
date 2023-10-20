@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    //contact 연락처 넣기
+    let myphone = '010-2433-0218'
+    $('.callBtn').click(function(){
+        document.location.href='tel:'+myphone;
+    });
+    
     //aos
     AOS.init();
 

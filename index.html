@@ -21,17 +21,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--aos-->
 
+    <!--icon-->
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+
 </head>
-<script>
-    $(window).on('load', function () {
-        $('.loding').delay('2000').fadeOut();
-    });
-</script>
 <body>
     <div id="wrap">
-        <div class="loding" style="background:#304A20; position:fixed; width:100vw; height:100vh; z-index: 999999999; top:0; left:0; display:flex; align-items: center; justify-content: center; display:none;">
-            <div><div class="loader"></div></div>
-        </div>
         <header id="header">
             <div class="center">
                 <h1 id="logo"><a href="javascript:;"><img src="img/logo.png" alt="윤:)"><p>Portfolio</p></a></h1>
@@ -96,21 +91,19 @@
                         <li>선문대학교 일어일본학과 졸업<br>(2009.03~2012.08)</li>
                         <li>더 조은 컴퓨터학원<br>UI/UX 컨텐츠디자인 제작과정 수료<br>(2019.07~2019.12)</li>
                         <li style="font-weight: bold;">[에덴] 웹퍼블리셔<br>(2020.12 ~ 2023.08)</li>
-                        <li><a href="mailto:yun.j0515@gmail.com">yun.j0515@gmail.com</a></li>
-                        <li class="kakao_qrcode"><a href="https://open.kakao.com/o/stxm22Ff" target="_blank"><img src="img/kakao_qrcode.jpg" alt="kakao_qrcode"></a></li>
                     </ul>
                 </div>
                 <div class="ab_box2">
                     <ul>
-                        <li data-aos="fade-up">안녕하세요 :)<br>하면 된다는 마음가짐으로, 어려워도 끈질기게 파고들어 해내는 인재! 김윤주 입니다.</li>
+                        <li data-aos="fade-up">안녕하세요 :)<br>하면 된다는 마음가짐으로, 어려워도 끈질기게 파고들어 해내는 김윤주 입니다.😀</li>
                         <li data-aos="fade-up" class="ab_box2_keyword">
                             <div>집중력</div>
                             <div>책임감</div>
                             <div>신중함</div>
                         </li>
                         <li data-aos="fade-up">인내력과 책임감이 강하며 디테일한 부분까지 잘 해낼 수 있습니다. </li>
-                        <li data-aos="fade-up">내향적인 성격을 가지고 있으나, 조직에 유연성 있게 물들기 위해 노력합니다.</li>
-                        <li data-aos="fade-up">빠른 현실 판단으로 실현 가능한 계획을 수립하고 실천하는 편이라 믿음직스럽다는 평을 많이 들었습니다.</li>
+                        <li data-aos="fade-up">내향적인 성격을 가지고 있으나, 동료들에게 유연성 있게 물들기 위해 노력합니다.</li>
+                        <li data-aos="fade-up">빠른 현실 판단으로 실현 가능한 계획을 수립하고 실천하는 편입니다.</li>
                         <li data-aos="fade-up">웹표준, 웹접근성에 맞게 마크업을 구현하며 - 데스크탑, 모바일, 반응형 웹페이지를 제작합니다.</li>
                     </ul>
                 </div>
@@ -123,28 +116,132 @@
                 </div>
                 <article class="pro_box">
                     <ul>
-                        <li><img src="img/1.jpg" alt=""></li>
-                        <li><img src="img/2.jpg" alt=""></li>
+                        <li>
+                            <img src="img/1.jpg" alt="">
+                            <ul class="pro_box_inner">
+                                <li class="pro_box_innerTxt">
+                                    <h3>HPSP(그누보드 퍼블리싱)</h3>
+                                    <span class="verTxt">#반응형</span>
+                                </li>
+                                <li>
+                                    <div class="moreBtn">
+                                        <a href="https://thehpsp.com/" target="_blank">사이트 보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="img/2.jpg" alt="">
+                            <ul class="pro_box_inner">
+                                <li class="pro_box_innerTxt">
+                                    <h3>업체명</h3><span class="verTxt">#반응형</span>
+                                </li>
+                                <li>
+                                    <div class="moreBtn">
+                                        <a href="javascript:;">사이트 보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="img/2.jpg" alt="">
+                            <ul class="pro_box_inner">
+                                <li class="pro_box_innerTxt">
+                                    <h3>업체명</h3>
+                                    <span class="verTxt">#반응형</span>
+                                </li>
+                                <li>
+                                    <div class="moreBtn">
+                                        <a href="javascript:;">사이트 보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="img/1.jpg" alt="">
+                            <ul class="pro_box_inner">
+                                <li class="pro_box_innerTxt">
+                                    <h3>미라판넬(그누보드 퍼블리싱)</h3><span class="verTxt">#PC</span>
+                                    도어, 판넬 전문업체. 메인 슬라이드는 슬라이드 될 때마다 이미지가 줄어드는 애니메이션을 추가하였고, 헤더 부분은 메인에서는 호버시에 검은로고가 나오며, 서브페이지에서는 검은 로고만 고정되도록 수정(메뉴도 동일). 메뉴는 호버시에 전체 메뉴가 노출되고, 메인에는 특정게시판 썸네일이 슬라이드 노출되도록 하였습니다.
+                                </li>
+                                <li>
+                                    <div class="moreBtn">
+                                        <a href="http://mirapanel.edenstore.co.kr/" target="_blank">사이트 보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="img/2.jpg" alt="">
+                            <ul class="pro_box_inner">
+                                <li class="pro_box_innerTxt">
+                                    <h3>시공디자인(그누보드 퍼블리싱)</h3>
+                                    <span class="verTxt">#PC</span>
+                                    인테리어 시공업체사이트. 메인과 서브페이지에서 로고가 다르게 들어가고, 메인 슬라이드는 좌우에서 상하로 변경, 메인에 노출되는 게시판의 CSS 변경, 견적문의 페이지를 비롯한 서브페이지를 전체 수정하였습니다.
+                                </li>
+                                <li>
+                                    <div class="moreBtn">
+                                        <a href="http://www.sgdesign.kr/" target="_blank">사이트 보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </article>
             </div>
         </section>
-        <section id="banner" style="height:780px; background:url(img/test.jpg)50% 50%;background-attachment:fixed;background-size: cover; padding:100px 0;">
+
+        <section id="banner" style="height:300px; background:url(img/test.jpg)50% 50%;background-attachment:fixed;background-size: cover;">
             <div class="center"></div>
         </section>
+        
+        
         <section id="contact">
             <div class="center">
                 <ul>
-                    <li><a href="mailto:yun.j0515@gmail.com">yun.j0515@gmail.com</a></li>
-                    <li class="kakao_qrcode"><a href="https://open.kakao.com/o/stxm22Ff" target="_blank"><img src="img/kakao_qrcode.jpg" alt="kakao_qrcode"></a></li>
-                    <li class="callBtn"><a href="javascript:;">전화걸기</a></li>
+                    <li class="mailBtn">
+                        <a href="javascript:;">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/hknimkec.json"
+                                trigger="hover"
+                                colors="primary:#304a20,secondary:#629110">
+                            </lord-icon>
+                            <div><span>메일보내기</span></div>
+                        </a>
+                    </li>
+                    <li class="kakao_qrcode">
+                        <a href="https://open.kakao.com/o/stxm22Ff" target="_blank">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/pfswoxen.json"
+                                trigger="hover"
+                                colors="primary:#304a20,secondary:#629110">
+                            </lord-icon>
+                            <div><span>오픈카톡</span></div>
+                        </a>
+                    </li>
+                    <li class="callBtn">
+                        <a href="javascript:;">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/amjaykqd.json"
+                                trigger="hover"
+                                colors="primary:#304a20,secondary:#629110">
+                            </lord-icon>
+                            <div><span>전화하기</span></div>
+                        </a>
+                    </li>
+                    <li class="smsBtn">
+                        <a href="javascript:;">
+                            <lord-icon
+                                src="https://cdn.lordicon.com/ukwexxlc.json"
+                                trigger="hover"
+                                colors="primary:#304a20,secondary:#629110">
+                            </lord-icon>
+                            <div><span>문자보내기</span></div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
-        
-
-
-
 
         <div class="topBtn" style="position:fixed; right:20px; bottom:2vh; z-index: 99999; width:70px; height:70px; padding:5px;box-sizing: border-box; border-radius:50%; background: rgba(255, 255, 255, 0.72); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);">
             <a href="#">
@@ -152,12 +249,7 @@
                     <title id="link1-title">상단으로 가기</title>
                     <desc id="link1-desc">go top</desc>                
                     <path id="link-circle" class="link__path" d="M 10, 50 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" stroke="none" fill="none" />                
-                    <path class="link__arrow" d="M 50 70 L 50 30 L 40 42.5 M 50 30 L 60 42.5"  fill="none" />                
-                    <text class="link__text">
-                    <textPath href="#link-circle" stroke="none">
-                        상단으로 가기. &nbsp;&nbsp;&nbsp;&nbsp;상단으로 가기.
-                    </textPath>
-                    </text>
+                    <path class="link__arrow" d="M 50 70 L 50 30 L 40 42.5 M 50 30 L 60 42.5"  fill="none" />
                 </svg>
             </a>
         </div>

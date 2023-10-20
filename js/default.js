@@ -1,11 +1,18 @@
 $(document).ready(function(){
 
-    //contact 연락처 넣기
+    //contact 내 정보 넣기
+    let mymail = 'yun.j0515@gmail.com'
     let myphone = '010-2433-0218'
+    $('.mailBtn').click(function(){
+        document.location.href='mailto:'+mymail;
+    });
     $('.callBtn').click(function(){
         document.location.href='tel:'+myphone;
     });
-    
+    $('.smsBtn').click(function(){
+        document.location.href='sms:'+myphone;
+    });
+
     //aos
     AOS.init();
 
@@ -63,26 +70,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-    //스크롤하면 글자 노출 : test---------------------------------------
-    let observer = new IntersectionObserver((e)=>{ //하단에 감시중인 박스가 등장&퇴장 시 실행.
-        e.forEach((박스)=>{
-            if(박스.isIntersecting){ //박스.isIntersecting = 보일때만 실행해주세요. 박스.intersectionRatio = 박스가 .5 보일때 실행.
-                박스.target.style.opacity = 1;
-                박스.target.style.transform = 'translateY(0)';
-            } else{ //사라질때 실행
-                박스.target.style.opacity = 0;
-                박스.target.style.transform = 'translateY(50px)';
-            }
-        })
-    })
-
-    let testbox = document.querySelectorAll('.test') //.test요소를 찾기
-    for(var i=0; i<=testbox.length; i++){ //text요소 개수.testbox.length
-        observer.observe(testbox[i])
-    }
 
 
 

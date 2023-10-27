@@ -68,12 +68,24 @@ section:not(#slide){padding:80px 0;}
   /*😀slide ----------------------*/
   #slide, .swiper{height:600px;}
 
-    #slide .swiper-slide{display:flex; align-items: flex-start; justify-content: center; flex-direction: column; color:#999; text-align: center;}
-    #slide .swiper-slide span{width: 50%;}
+    #slide .swiper-slide{display:flex; align-items: flex-start; justify-content: center; flex-direction: column; text-align: center;}
+    #slide .swiper-slide>div{width: 50%; display:flex; flex-flow: column; align-items: center;}
+        #slide .swiper-slide span{font-size:25px; text-transform: uppercase; }
+        #slide .swiper-slide p{word-break: keep-all; max-width: 500px; margin:20px 0;}
+        #slide .swiper-slide .visitBtn{ line-height:25px; border-radius: 25px; border:1px solid var(--maincolor);}#slide .swiper-slide .visitBtn a{color:var(--maincolor); padding:0 15px;}
+        #slide .swiper-slide .visitBtn:hover { background:var(--maincolor);} #slide .swiper-slide .visitBtn:hover a{color:#fff;}
+
+        #slide .swiper-slide.slideDark .visitBtn{border:1px solid #fff;} #slide .swiper-slide.slideDark .visitBtn a{color:#fff;}
+        #slide .swiper-slide.slideDark .visitBtn:hover{background:#fff;}
+        #slide .swiper-slide.slideDark .visitBtn:hover a{color:var(--maincolor);}
+
+
 
       #slide .swiper-slide.txtR{align-items: flex-end;} 
 
     #slide .swiper-slide.swiper-slide-active span{animation:slideTxt .7s .2s both;}
+    #slide .swiper-slide.swiper-slide-active p{animation:slideTxt 1.5s .2s both;}
+    #slide .swiper-slide.swiper-slide-active .visitBtn{animation:slideTxt 2s .2s both;}
     @keyframes slideTxt{
       0%{opacity: 0; transform: translateY(30px);}
       100%{opacity: 1; transform: translateY(0);}

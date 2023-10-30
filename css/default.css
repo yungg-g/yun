@@ -229,4 +229,7 @@ section:not(#slide){padding:80px 0;}
     }
     .pro_box>ul>li{max-width: 100%;}
 
+	/*모바일 banner부분 화면 고정되도록 노출*/
+    body{background:url(../img/background.jpg)50% 50%;background-attachment:fixed;background-size: cover; position:relative;}body::after{content: ''; height:250px; width:100%; background:#fff; position:absolute; top:0; left:0; z-index: -1;}  #banner::after{display:none;} #project,#footer{background:#fff;}
+
 }

@@ -50,7 +50,7 @@ body{ min-width: 760px;;
         }
     #logo a>p{font-size:24px;}
     /*#header.on*/
-    #header.on{position:fixed; top:0; left:0; width:100%; z-index: 99999;}
+    #header.on{position:fixed; top:0; left:0; width:100%; z-index: 99999; box-shadow:0 0 20px lightgray;}
     #header.on, #header.on #logo{height:80px;}
     #header.on #logo a{flex-flow: initial; gap:40px;}
     #header.on #logo>a::after{content: ''; width:1px; height:34px; background:#979797; position:absolute; top:50%; left:70px; transform:translate(-44%,-50%); animation:logobar2 .7s .2s both;}
